@@ -1,196 +1,182 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="es"><head>
 <meta charset="utf-8"/>
-<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
-<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
-<title>Stitch Design</title>
-<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>HealthLab - Pago</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script>
-    tailwind.config = {
-      darkMode: "class",
-      theme: {
-        extend: {
-          colors: {
-            "primary": "#137fec",
-            "background-light": "#f6f7f8",
-            "background-dark": "#101922",
-            "warning": "#f59e0b",
-            "danger": "#ef4444",
-            "success": "#22c55e",
-          },
-          fontFamily: {
-            "display": ["Inter"]
-          },
-          borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
-        },
-      },
-    }
-  </script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                        "foreground-light": "#111418",
+                        "foreground-dark": "#f0f2f4",
+                        "subtle-light": "#617589",
+                        "subtle-dark": "#a1b0c0",
+                        "border-light": "#dbe0e6",
+                        "border-dark": "#303e4c",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "0.75rem",
+                        "xl": "1rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
 </head>
 <body class="bg-background-light dark:bg-background-dark font-display">
-<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
-<div class="flex h-full grow">
-<aside class="w-80 flex-shrink-0 bg-white dark:bg-background-dark/50 p-6 flex flex-col gap-8 border-r border-black/10 dark:border-white/10">
-<div class="flex flex-col gap-4">
-<label class="flex flex-col w-full">
-<div class="flex w-full flex-1 items-stretch rounded-lg h-12">
-<div class="text-black/60 dark:text-white/60 flex bg-black/5 dark:bg-white/5 items-center justify-center pl-4 rounded-l-lg">
-<span class="material-symbols-outlined">search</span>
+<div class="flex flex-col min-h-screen">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-border-light dark:border-border-dark px-6 sm:px-10 py-4">
+<div class="flex items-center gap-3">
+<div class="p-2 bg-primary rounded-lg text-white">
+<span class="material-symbols-outlined">science</span>
 </div>
-<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-r-lg text-black dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary border-none bg-black/5 dark:bg-white/5 h-full placeholder:text-black/60 dark:placeholder:text-white/60 px-4 text-base font-normal leading-normal" placeholder="Buscar muestras..." value=""/>
+<h2 class="text-foreground-light dark:text-foreground-dark text-xl font-bold">HealthLab</h2>
 </div>
+<div class="flex items-center gap-4">
+<button class="flex items-center justify-center size-10 rounded-full bg-background-light dark:bg-background-dark text-subtle-light dark:text-subtle-dark hover:bg-primary/10 dark:hover:bg-primary/20">
+<span class="material-symbols-outlined">help</span>
+</button>
+<div class="size-10 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCHfwQx5BL5C_O4k6MetmwwAwbjsqjOjfkFkiNoTHjFq0HYid4d3PzjuMHPxjpDcn2jvkI0B78P0y6ixo_cmTAB10bvsKBcpdd5oh4iiXtw259l9A8uMDkGMXK-zMPtd6K9JFSQoWxo_9QKGz_M_RNqlxngYBQeWC0oWUgPokvYfo3TohobFglW1FFvvwG8m0RBONNA_aqnTlaUSTjX9AOO1TJUp6ZKXWQsqkuXySfOegEumtI3M5U1UmkrBQZNhKeOnPv2dcz4jac");'></div>
+</div>
+</header>
+<main class="flex-grow flex justify-center py-8 px-4 sm:px-6 lg:px-8">
+<div class="w-full max-w-2xl">
+<div class="mb-8 px-4">
+<div class="flex justify-between items-center mb-2">
+<p class="text-sm font-medium text-foreground-light dark:text-foreground-dark">Paso 2 de 3</p>
+<p class="text-sm font-medium text-primary">Pago</p>
+</div>
+<div class="w-full bg-border-light dark:bg-border-dark rounded-full h-2">
+<div class="bg-primary h-2 rounded-full" style="width: 66%;"></div>
+</div>
+<p class="text-xs text-subtle-light dark:text-subtle-dark text-center mt-2">Resumen → <span class="font-bold text-foreground-light dark:text-foreground-dark">Pago</span> → Confirmación</p>
+</div>
+<div class="bg-white dark:bg-background-dark rounded-xl shadow-sm border border-border-light dark:border-border-dark overflow-hidden">
+<div class="p-6">
+<h1 class="text-2xl font-bold text-foreground-light dark:text-foreground-dark mb-6">Detalles del Pago</h1>
+<div class="mb-6">
+<h3 class="text-lg font-semibold text-foreground-light dark:text-foreground-dark mb-4">Resumen de la Orden</h3>
+<div class="space-y-3">
+<div class="flex justify-between items-center">
+<div>
+<p class="font-medium text-foreground-light dark:text-foreground-dark">Análisis de Sangre (Hemograma Completo)</p>
+</div>
+<p class="text-foreground-light dark:text-foreground-dark">$45.00</p>
+</div>
+<div class="flex justify-between items-center">
+<div>
+<p class="font-medium text-foreground-light dark:text-foreground-dark">Prueba de Colesterol (Perfil Lipídico)</p>
+</div>
+<p class="text-foreground-light dark:text-foreground-dark">$60.00</p>
+</div>
+<div class="flex justify-between items-center">
+<div>
+<p class="font-medium text-foreground-light dark:text-foreground-dark">Análisis de Orina (Urianálisis)</p>
+</div>
+<p class="text-foreground-light dark:text-foreground-dark">$35.00</p>
+</div>
+</div>
+<hr class="my-4 border-border-light dark:border-border-dark"/>
+<div class="space-y-2">
+<div class="flex justify-between text-subtle-light dark:text-subtle-dark">
+<p>Subtotal</p>
+<p>$140.00</p>
+</div>
+<div class="flex justify-between text-subtle-light dark:text-subtle-dark">
+<p>Descuento del Seguro</p>
+<p class="text-green-600 dark:text-green-500">-$10.00</p>
+</div>
+<div class="flex justify-between font-bold text-lg text-foreground-light dark:text-foreground-dark">
+<p>Total</p>
+<p>$130.00</p>
+</div>
+</div>
+</div>
+<div class="mb-6">
+<h3 class="text-lg font-semibold text-foreground-light dark:text-foreground-dark mb-4">Método de Pago</h3>
+<div class="flex flex-wrap gap-3">
+<label class="flex-1 min-w-[100px] text-center cursor-pointer">
+<input checked="" class="sr-only" name="payment_method" type="radio" value="card"/>
+<div class="py-3 px-4 rounded-lg border-2 border-primary bg-primary/10 text-primary font-medium">Tarjeta</div>
+</label>
+<label class="flex-1 min-w-[100px] text-center cursor-pointer">
+<input class="sr-only" name="payment_method" type="radio" value="insurance"/>
+<div class="py-3 px-4 rounded-lg border border-border-light dark:border-border-dark text-subtle-light dark:text-subtle-dark hover:border-primary">Seguro</div>
+</label>
+<label class="flex-1 min-w-[100px] text-center cursor-pointer">
+<input class="sr-only" name="payment_method" type="radio" value="mixed"/>
+<div class="py-3 px-4 rounded-lg border border-border-light dark:border-border-dark text-subtle-light dark:text-subtle-dark hover:border-primary">Mixto</div>
 </label>
 </div>
-<div class="flex flex-col gap-4">
-<h2 class="text-xl font-bold text-black dark:text-white">Filtros</h2>
-<div class="flex flex-col gap-2">
-<h3 class="font-semibold text-black/80 dark:text-white/80">Estado</h3>
-<div class="flex gap-2 flex-wrap">
-<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full px-4 bg-primary text-white text-sm font-medium">Pendiente</button>
-<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full px-4 bg-black/5 dark:bg-white/5 text-black/80 dark:text-white/80 text-sm font-medium">Procesando</button>
-<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full px-4 bg-black/5 dark:bg-white/5 text-black/80 dark:text-white/80 text-sm font-medium">Completado</button>
-<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full px-4 bg-black/5 dark:bg-white/5 text-black/80 dark:text-white/80 text-sm font-medium">Incidencia</button>
+</div>
+<div class="grid grid-cols-1 gap-y-6 gap-x-4">
+<div>
+<label class="block text-sm font-medium text-subtle-light dark:text-subtle-dark" for="card-number">Número de Tarjeta</label>
+<div class="mt-1 relative rounded-md shadow-sm">
+<div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+<span class="material-symbols-outlined text-subtle-light dark:text-subtle-dark">credit_card</span>
+</div>
+<input class="block w-full rounded-lg border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark py-3 pl-10 pr-3 text-foreground-light dark:text-foreground-dark focus:outline-none focus:ring-primary focus:border-primary sm:text-sm" id="card-number" name="card-number" placeholder="0000 0000 0000 0000" type="text"/>
 </div>
 </div>
-<div class="flex flex-col gap-2">
-<h3 class="font-semibold text-black/80 dark:text-white/80">Tipo de Análisis</h3>
-<div class="flex gap-2 flex-wrap">
-<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full px-4 bg-black/5 dark:bg-white/5 text-black/80 dark:text-white/80 text-sm font-medium">Hematología</button>
-<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full px-4 bg-black/5 dark:bg-white/5 text-black/80 dark:text-white/80 text-sm font-medium">Química</button>
-<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full px-4 bg-black/5 dark:bg-white/5 text-black/80 dark:text-white/80 text-sm font-medium">Microbiología</button>
+<div>
+<label class="block text-sm font-medium text-subtle-light dark:text-subtle-dark" for="cardholder-name">Nombre del Titular</label>
+<div class="mt-1">
+<input class="block w-full rounded-lg border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark py-3 px-3 text-foreground-light dark:text-foreground-dark focus:outline-none focus:ring-primary focus:border-primary sm:text-sm" id="cardholder-name" name="cardholder-name" placeholder="John Doe" type="text"/>
 </div>
 </div>
-</div>
-<div class="flex flex-col gap-4">
-<h2 class="text-xl font-bold text-black dark:text-white">Notificaciones</h2>
-<div class="flex flex-col gap-4">
-<div class="flex items-start gap-4">
-<div class="text-danger flex items-center justify-center rounded-full bg-danger/10 shrink-0 size-10 mt-1">
-<span class="material-symbols-outlined">error</span>
-</div>
-<div class="flex flex-col">
-<p class="text-black dark:text-white font-semibold">Incidencia reportada</p>
-<p class="text-black/60 dark:text-white/60 text-sm">Muestra #12345: Contaminación</p>
+<div class="grid grid-cols-2 gap-4">
+<div>
+<label class="block text-sm font-medium text-subtle-light dark:text-subtle-dark" for="expiry-date">Fecha de Vencimiento</label>
+<div class="mt-1">
+<input class="block w-full rounded-lg border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark py-3 px-3 text-foreground-light dark:text-foreground-dark focus:outline-none focus:ring-primary focus:border-primary sm:text-sm" id="expiry-date" name="expiry-date" placeholder="MM / AA" type="text"/>
 </div>
 </div>
-<div class="flex items-start gap-4">
-<div class="text-success flex items-center justify-center rounded-full bg-success/10 shrink-0 size-10 mt-1">
-<span class="material-symbols-outlined">task_alt</span>
-</div>
-<div class="flex flex-col">
-<p class="text-black dark:text-white font-semibold">Análisis completado</p>
-<p class="text-black/60 dark:text-white/60 text-sm">Muestra #67890</p>
+<div>
+<label class="block text-sm font-medium text-subtle-light dark:text-subtle-dark" for="cvv">CVV</label>
+<div class="mt-1">
+<input class="block w-full rounded-lg border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark py-3 px-3 text-foreground-light dark:text-foreground-dark focus:outline-none focus:ring-primary focus:border-primary sm:text-sm" id="cvv" name="cvv" placeholder="123" type="text"/>
 </div>
 </div>
 </div>
 </div>
-</aside>
-<main class="flex-1 p-6 lg:p-8">
-<div class="max-w-7xl mx-auto">
-<header class="mb-8">
-<h1 class="text-4xl font-bold text-black dark:text-white">Gestión de Muestras</h1>
-</header>
-<section class="mb-8">
-<div class="relative flex flex-col items-center justify-center gap-4 rounded-xl border-2 border-dashed border-black/20 dark:border-white/20 p-8 text-center bg-white dark:bg-black/20 overflow-hidden">
-<div class="absolute inset-0 bg-gradient-to-b from-primary/10 to-transparent dark:from-primary/20 dark:to-transparent -z-10"></div>
-<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-1 w-full bg-primary animate-[scan_2s_ease-in-out_infinite] z-10 shadow-[0_0_20px] shadow-primary"></div>
-<span class="material-symbols-outlined text-6xl text-primary">barcode_scanner</span>
-<div class="flex flex-col items-center gap-1 z-20">
-<p class="text-xl font-bold text-black dark:text-white">Escanear código de barras</p>
-<p class="text-black/60 dark:text-white/60 max-w-sm">Apunte la cámara al código de barras de la muestra para iniciar el procesamiento.</p>
+<div class="mt-8">
+<button class="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-base font-medium text-white bg-primary hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary" type="submit">
+<span class="material-symbols-outlined mr-2">lock</span>
+                                Pagar $130.00
+                            </button>
+<p class="mt-4 text-xs text-subtle-light dark:text-subtle-dark text-center flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-sm">verified_user</span>
+                                Pago seguro con tecnología de Stripe. Cifrado SSL.
+                            </p>
 </div>
-<style> @keyframes scan { 0% { top: 0%; } 100% { top: 100%; } } </style>
 </div>
-</section>
-<section>
-<h2 class="text-2xl font-bold text-black dark:text-white mb-4">Muestras en Proceso</h2>
-<div class="overflow-x-auto rounded-lg border border-black/10 dark:border-white/10 bg-white dark:bg-black/20">
-<table class="w-full text-left">
-<thead class="bg-black/5 dark:bg-white/5">
-<tr>
-<th class="p-4 text-sm font-semibold text-black/80 dark:text-white/80">ID Muestra</th>
-<th class="p-4 text-sm font-semibold text-black/80 dark:text-white/80">Estado</th>
-<th class="p-4 text-sm font-semibold text-black/80 dark:text-white/80">Tipo de Análisis</th>
-<th class="p-4 text-sm font-semibold text-black/80 dark:text-white/80">Timeline</th>
-<th class="p-4 text-sm font-semibold text-black/80 dark:text-white/80 text-right">Acciones</th>
-</tr>
-</thead>
-<tbody class="divide-y divide-black/10 dark:divide-white/10">
-<tr>
-<td class="p-4 text-black dark:text-white font-mono">#12345</td>
-<td class="p-4">
-<div class="inline-flex items-center gap-2 rounded-full py-1 px-3 text-sm font-medium bg-warning/10 text-warning">
-<span class="material-symbols-outlined text-base">hourglass_top</span>
-                            Procesando
-                        </div>
-</td>
-<td class="p-4 text-black/80 dark:text-white/80">Hematología</td>
-<td class="p-4">
-<div class="flex items-center gap-2 text-sm text-black/60 dark:text-white/60">
-<span class="material-symbols-outlined text-lg">timer</span>
-<span>00:15:32</span>
 </div>
-</td>
-<td class="p-4 text-right">
-<button class="h-9 px-4 flex items-center justify-center gap-2 bg-primary/10 hover:bg-primary/20 dark:bg-primary/20 dark:hover:bg-primary/30 text-primary font-semibold rounded-lg text-sm">
-<span class="material-symbols-outlined text-base">play_arrow</span>
-<span>Iniciar</span>
-</button>
-</td>
-</tr>
-<tr>
-<td class="p-4 text-black dark:text-white font-mono">#67890</td>
-<td class="p-4">
-<div class="inline-flex items-center gap-2 rounded-full py-1 px-3 text-sm font-medium bg-danger/10 text-danger">
-<span class="material-symbols-outlined text-base">error</span>
-                            Incidencia
-                        </div>
-</td>
-<td class="p-4 text-black/80 dark:text-white/80">Química</td>
-<td class="p-4">
-<div class="flex items-center gap-2 text-sm text-black/60 dark:text-white/60">
-<span class="material-symbols-outlined text-lg">timer</span>
-<span>01:02:11</span>
-</div>
-</td>
-<td class="p-4 text-right">
-<button class="h-9 px-4 flex items-center justify-center gap-2 bg-danger/10 hover:bg-danger/20 dark:bg-danger/20 dark:hover:bg-danger/30 text-danger font-semibold rounded-lg text-sm">
-<span class="material-symbols-outlined text-base">flag</span>
-<span>Incidencia</span>
-</button>
-</td>
-</tr>
-<tr>
-<td class="p-4 text-black dark:text-white font-mono">#11223</td>
-<td class="p-4">
-<div class="inline-flex items-center gap-2 rounded-full py-1 px-3 text-sm font-medium bg-success/10 text-success">
-<span class="material-symbols-outlined text-base">check_circle</span>
-                        Completado
-                      </div>
-</td>
-<td class="p-4 text-black/80 dark:text-white/80">Microbiología</td>
-<td class="p-4">
-<div class="flex items-center gap-2 text-sm text-black/60 dark:text-white/60">
-<span class="material-symbols-outlined text-lg">timer</span>
-<span>00:48:59</span>
-</div>
-</td>
-<td class="p-4 text-right">
-<button class="h-9 px-4 flex items-center justify-center gap-2 bg-success/10 hover:bg-success/20 dark:bg-success/20 dark:hover:bg-success/30 text-success font-semibold rounded-lg text-sm">
-<span class="material-symbols-outlined text-base">science</span>
-<span>Ver Análisis</span>
-</button>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
 </div>
 </main>
 </div>
-</div>
-
 </body></html>
