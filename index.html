@@ -1,254 +1,224 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="es"><head>
 <meta charset="utf-8"/>
-<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
-<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter:wght@400;500;700;900&amp;family=Noto+Sans:wght@400;500;700;900" onload="this.rel='stylesheet'" rel="stylesheet"/>
-<title>Portal para Médicos</title>
-<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Punto de Venta Laboratorio Clínico</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <script>
-    tailwind.config = {
-      darkMode: "class",
-      theme: {
-        extend: {
-          colors: {
-            "primary": "#0d59a5",
-            "background-light": "#f6f7f8",
-            "background-dark": "#101922",
-          },
-          fontFamily: {
-            "display": ["Inter"]
-          },
-          borderRadius: {
-            "DEFAULT": "0.25rem",
-            "lg": "0.5rem",
-            "xl": "0.75rem",
-            "full": "9999px"
-          },
-        },
-      },
-    }
-  </script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                        "foreground-light": "#111827",
+                        "foreground-dark": "#f9fafb",
+                        "subtle-light": "#6b7280",
+                        "subtle-dark": "#9ca3af",
+                        "border-light": "#e5e7eb",
+                        "border-dark": "#374151",
+                        "card-light": "#ffffff",
+                        "card-dark": "#1f2937",
+                        "success-light": "#10b981",
+                        "success-dark": "#34d399",
+                        "danger-light": "#ef4444",
+                        "danger-dark": "#f87171"
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "0.75rem",
+                        "xl": "1rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 1,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
 </head>
-<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
-<div class="relative flex min-h-screen w-full flex-col">
-<div class="flex h-full grow flex-col">
-<header class="flex items-center justify-between whitespace-nowrap border-b border-gray-200 dark:border-gray-700 px-10 py-3">
-<div class="flex items-center gap-4 text-gray-900 dark:text-white">
-<div class="size-6 text-primary">
-<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-<path d="M44 11.2727C44 14.0109 39.8386 16.3957 33.69 17.6364C39.8386 18.877 44 21.2618 44 24C44 26.7382 39.8386 29.123 33.69 30.3636C39.8386 31.6043 44 33.9891 44 36.7273C44 40.7439 35.0457 44 24 44C12.9543 44 4 40.7439 4 36.7273C4 33.9891 8.16144 31.6043 14.31 30.3636C8.16144 29.123 4 26.7382 4 24C4 21.2618 8.16144 18.877 14.31 17.6364C8.16144 16.3957 4 14.0109 4 11.2727C4 7.25611 12.9543 4 24 4C35.0457 4 44 7.25611 44 11.2727Z" fill="currentColor"></path>
-</svg>
-</div>
-<h2 class="text-lg font-bold">Clínica</h2>
-</div>
-<div class="flex flex-1 justify-end gap-4 items-center">
-<button class="relative flex cursor-pointer items-center justify-center rounded-full size-10 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300">
-<span class="material-symbols-outlined">
-              notifications
-            </span>
-<span class="absolute top-1 right-1 flex h-4 w-4 items-center justify-center rounded-full bg-primary text-white text-xs font-bold">3</span>
-</button>
-<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBH2CxPaVCg5AL1wzwCBpqxk858bgyUgGjUVaZe1746avAcG9mOUQkBKtOL8GbVvcvLTwUb5DAea2EfeUaS0Dn9rW0pHYI56nTfhV9j9IAnO0XNvQTFvsFH-7juSkuk96imkpU2IxkDiAEJPWh13oz5pCtUJQ6kSGedMxKgmeWmF3K1X-4XEYS2_NnV_Hr-ZnLkm-GZsrC_OgVd7ZkJ93wQnjQocRoKc8ML2gHxxHapogJK_yBeglpNqHJtTHJ8lmFamCprc-oLeeI");'></div>
-</div>
+<body class="font-display bg-background-light dark:bg-background-dark text-foreground-light dark:text-foreground-dark">
+<div class="flex flex-col lg:flex-row h-screen">
+<main class="flex-1 p-6 lg:p-8 overflow-y-auto">
+<div class="max-w-7xl mx-auto">
+<header class="mb-8">
+<h1 class="text-4xl font-bold text-foreground-light dark:text-foreground-dark">Punto de Venta</h1>
+<p class="text-subtle-light dark:text-subtle-dark mt-1">Cajero/a: Jane Doe</p>
 </header>
-<main class="flex flex-1 justify-center py-10 px-4 sm:px-6 lg:px-8">
-<div class="w-full max-w-2xl space-y-12">
-<div class="bg-white dark:bg-background-dark p-8 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700">
-<h2 class="text-2xl font-bold text-gray-900 dark:text-white text-center">Portal para Médicos</h2>
-<p class="text-center text-gray-500 dark:text-gray-400 mt-2">Inicie sesión para continuar</p>
-<div class="mt-8 space-y-6">
-<div>
-<label class="block text-sm font-medium text-gray-700 dark:text-gray-300" for="usuario">Usuario</label>
-<input class="mt-1 form-input block w-full rounded border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 focus:border-primary focus:ring-primary text-gray-900 dark:text-gray-200 placeholder-gray-400 dark:placeholder-gray-500" id="usuario" placeholder="Ingrese su usuario" type="text"/>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<div class="lg:col-span-2 space-y-8">
+<div class="bg-card-light dark:bg-card-dark p-6 rounded-lg shadow-sm">
+<h2 class="text-xl font-semibold mb-4">Detalles de la Cita</h2>
+<div class="flex items-center gap-4 bg-background-light dark:bg-background-dark p-4 rounded-lg">
+<span class="material-symbols-outlined text-primary text-3xl">qr_code_scanner</span>
+<input class="form-input w-full bg-transparent border-0 focus:ring-0 text-lg placeholder:text-subtle-light dark:placeholder:text-subtle-dark" placeholder="Escanear QR de la Cita o Ingresar ID" type="text"/>
 </div>
-<div>
-<label class="block text-sm font-medium text-gray-700 dark:text-gray-300" for="contrasena">Contraseña</label>
-<input class="mt-1 form-input block w-full rounded border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 focus:border-primary focus:ring-primary text-gray-900 dark:text-gray-200 placeholder-gray-400 dark:placeholder-gray-500" id="contrasena" placeholder="Ingrese su contraseña" type="password"/>
+<div class="mt-4 pt-4 border-t border-border-light dark:border-border-dark">
+<h3 class="font-medium">Paciente: <span class="font-normal text-subtle-light dark:text-subtle-dark">Juan Pérez (ID: P12345)</span></h3>
+<h3 class="font-medium">Cita: <span class="font-normal text-subtle-light dark:text-subtle-dark">#A9876 - 10:30 AM</span></h3>
 </div>
-<button class="w-full flex justify-center py-3 px-4 border border-transparent rounded text-sm font-medium text-white bg-primary hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">
-                Iniciar Sesión
-              </button>
+</div>
+<div class="bg-card-light dark:bg-card-dark p-6 rounded-lg shadow-sm">
+<h2 class="text-xl font-semibold mb-4">Resumen de Servicios</h2>
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="border-b border-border-light dark:border-border-dark">
+<th class="p-3 font-medium text-subtle-light dark:text-subtle-dark">Servicio</th>
+<th class="p-3 font-medium text-subtle-light dark:text-subtle-dark text-center">Cantidad</th>
+<th class="p-3 font-medium text-subtle-light dark:text-subtle-dark text-right">Precio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="p-3">Perfil Sanguíneo Completo</td>
+<td class="p-3 text-center text-subtle-light dark:text-subtle-dark">1</td>
+<td class="p-3 text-right">$150.00</td>
+</tr>
+<tr>
+<td class="p-3">Análisis de Orina</td>
+<td class="p-3 text-center text-subtle-light dark:text-subtle-dark">1</td>
+<td class="p-3 text-right">$45.00</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="mt-4 pt-4 border-t border-border-light dark:border-border-dark space-y-2">
+<div class="flex justify-between">
+<span class="text-subtle-light dark:text-subtle-dark">Subtotal</span>
+<span>$195.00</span>
+</div>
+<div class="flex justify-between">
+<span class="text-subtle-light dark:text-subtle-dark">Descuento (10%)</span>
+<span class="text-success-light dark:text-success-dark">-$19.50</span>
+</div>
+<div class="flex justify-between font-bold text-lg">
+<span>Total</span>
+<span>$175.50</span>
+</div>
+</div>
+</div>
+<div class="bg-card-light dark:bg-card-dark p-6 rounded-lg shadow-sm">
+<h2 class="text-xl font-semibold mb-4">Historial de Transacciones (Hoy)</h2>
+<div class="overflow-y-auto max-h-64">
+<table class="w-full text-left">
+<thead>
+<tr class="border-b border-border-light dark:border-border-dark">
+<th class="p-3 font-medium text-subtle-light dark:text-subtle-dark">Hora</th>
+<th class="p-3 font-medium text-subtle-light dark:text-subtle-dark">Paciente</th>
+<th class="p-3 font-medium text-subtle-light dark:text-subtle-dark text-right">Monto</th>
+<th class="p-3 font-medium text-subtle-light dark:text-subtle-dark text-center">Método</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="p-3 text-subtle-light dark:text-subtle-dark">9:00 AM</td>
+<td class="p-3">Sofía Clark</td>
+<td class="p-3 text-right">$90.00</td>
+<td class="p-3 text-center text-subtle-light dark:text-subtle-dark">Tarjeta</td>
+</tr>
+<tr class="bg-background-light dark:bg-background-dark">
+<td class="p-3 text-subtle-light dark:text-subtle-dark">10:30 AM</td>
+<td class="p-3">Ethan Carter</td>
+<td class="p-3 text-right">$75.00</td>
+<td class="p-3 text-center text-subtle-light dark:text-subtle-dark">Efectivo</td>
+</tr>
+<tr>
+<td class="p-3 text-subtle-light dark:text-subtle-dark">11:45 AM</td>
+<td class="p-3">Olivia Reed</td>
+<td class="p-3 text-right">$120.00</td>
+<td class="p-3 text-center text-subtle-light dark:text-subtle-dark">Transferencia</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="mt-4 pt-4 border-t border-border-light dark:border-border-dark space-y-2 font-medium">
+<div class="flex justify-between">
+<span class="text-subtle-light dark:text-subtle-dark">Transacciones Totales</span>
+<span>3</span>
+</div>
+<div class="flex justify-between">
+<span class="text-subtle-light dark:text-subtle-dark">Ingresos Totales</span>
+<span class="font-bold">$285.00</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-card-light dark:bg-card-dark rounded-lg shadow-sm p-6 space-y-6 flex flex-col">
+<div class="flex-1 space-y-4">
 <div class="text-center">
-<a class="text-sm text-primary hover:underline" href="#">¿Olvidó su contraseña?</a>
+<label class="text-sm text-subtle-light dark:text-subtle-dark">Monto Recibido</label>
+<div class="text-5xl font-bold mt-1">$175.50</div>
+</div>
+<div class="grid grid-cols-3 gap-2">
+<button class="h-16 text-2xl font-bold bg-background-light dark:bg-background-dark rounded-lg hover:bg-primary/10 transition-colors">1</button>
+<button class="h-16 text-2xl font-bold bg-background-light dark:bg-background-dark rounded-lg hover:bg-primary/10 transition-colors">2</button>
+<button class="h-16 text-2xl font-bold bg-background-light dark:bg-background-dark rounded-lg hover:bg-primary/10 transition-colors">3</button>
+<button class="h-16 text-2xl font-bold bg-background-light dark:bg-background-dark rounded-lg hover:bg-primary/10 transition-colors">4</button>
+<button class="h-16 text-2xl font-bold bg-background-light dark:bg-background-dark rounded-lg hover:bg-primary/10 transition-colors">5</button>
+<button class="h-16 text-2xl font-bold bg-background-light dark:bg-background-dark rounded-lg hover:bg-primary/10 transition-colors">6</button>
+<button class="h-16 text-2xl font-bold bg-background-light dark:bg-background-dark rounded-lg hover:bg-primary/10 transition-colors">7</button>
+<button class="h-16 text-2xl font-bold bg-background-light dark:bg-background-dark rounded-lg hover:bg-primary/10 transition-colors">8</button>
+<button class="h-16 text-2xl font-bold bg-background-light dark:bg-background-dark rounded-lg hover:bg-primary/10 transition-colors">9</button>
+<button class="h-16 text-2xl font-bold bg-background-light dark:bg-background-dark rounded-lg hover:bg-primary/10 transition-colors">.</button>
+<button class="h-16 text-2xl font-bold bg-background-light dark:bg-background-dark rounded-lg hover:bg-primary/10 transition-colors">0</button>
+<button class="h-16 flex items-center justify-center bg-background-light dark:bg-background-dark rounded-lg hover:bg-primary/10 transition-colors"><span class="material-symbols-outlined text-2xl">backspace</span></button>
 </div>
 </div>
+<div class="text-center bg-background-light dark:bg-background-dark p-4 rounded-lg">
+<div class="text-lg font-medium text-subtle-light dark:text-subtle-dark">Cambio</div>
+<div class="text-4xl font-bold text-primary">$0.00</div>
 </div>
-<div>
-<h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Dashboard</h2>
-<div class="relative mb-6">
-<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 dark:text-gray-500">search</span>
-<input class="form-input w-full pl-10 rounded-lg border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 focus:border-primary focus:ring-primary text-gray-900 dark:text-gray-200 placeholder-gray-400 dark:placeholder-gray-500" placeholder="Buscar pacientes..." type="text"/>
-</div>
-<div class="border-b border-gray-200 dark:border-gray-700 mb-6">
-<nav aria-label="Tabs" class="-mb-px flex space-x-8">
-<a class="whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary hover:border-primary/50 dark:hover:border-primary/50" href="#">Todos</a>
-<a aria-current="page" class="whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm border-primary text-primary" href="#">Autorizados</a>
-<a class="whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary hover:border-primary/50 dark:hover:border-primary/50" href="#">Pendientes</a>
-</nav>
-</div>
-<div class="space-y-4">
-<div class="flex items-center gap-4 bg-white dark:bg-gray-800 p-4 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700/50 cursor-pointer">
-<img alt="Sofía Rodríguez" class="size-14 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCr1r8HirH48oHTDt-m5XeJx5rvfsa0A_KqGse5f6GNrC8RlZxzmDhIsIza-m-kAgrD5VU9HSpATTN7MK8lG267phlb8yJtjLKv-atV91uwAH_mdTQ7H3sKdxyB25AGlAg63pia5-m2m9Ywpcm9VfsncKZ-rZB1jNJosXgl_6-iqpzHElvicZrr45GLgWWWk0ehnEDNqVbBuCnUwATQesL5kQBiX7m2N_SHO9SCwnXtbQ2lwsChkLkZQAFApDRaM52fQMhaBQo1LjI"/>
-<div class="flex-1">
-<p class="font-medium text-gray-900 dark:text-white">Paciente: Sofía Rodríguez</p>
-<p class="text-sm text-gray-500 dark:text-gray-400">Fecha de última consulta: 15/07/2024</p>
-</div>
-<span class="material-symbols-outlined text-gray-400 dark:text-gray-500">chevron_right</span>
-</div>
-<div class="flex items-center gap-4 bg-white dark:bg-gray-800 p-4 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700/50 cursor-pointer">
-<img alt="Carlos López" class="size-14 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRETymQiF_ljz1JoU67fJPX_k07D2ShDhuQNvZaHJcpxyXLEqN6BTdemEsUWgd03SY7F5tip5jsLY6mhUa_Avk99FWT57Q7vSv7gAD_0lhluEvf_NI0n1k3-ytfUKsw6Jnrv2nlkgpzNLyLbciQsrSmXHhRtf9-rjcbfimkpnp_0vAJSbFvT7PV-mewPLXG5pqMVstDzWOfEh5jyWG0Zh9zJunRbz0Y2vDxMyoKBpvHs2e-WnXzO5-kC8dZS_sFxAw7Ry2N5tPeic"/>
-<div class="flex-1">
-<p class="font-medium text-gray-900 dark:text-white">Paciente: Carlos López</p>
-<p class="text-sm text-gray-500 dark:text-gray-400">Fecha de última consulta: 22/06/2024</p>
-</div>
-<span class="material-symbols-outlined text-gray-400 dark:text-gray-500">chevron_right</span>
-</div>
-<div class="flex items-center gap-4 bg-white dark:bg-gray-800 p-4 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700/50 cursor-pointer">
-<img alt="Ana Martínez" class="size-14 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFIg0RTI4I7sN9exDp3U7BXL6ZIpsmcpqjkSnK9yPQ-IuDSe6CHxH5JgqVkDCkklMfBZumzg4guNgNrSEguxYRIS0cPcbzu12pN2hXbJTuB8bhK3Z0Hbz1lNAoj5bv6EjUeqXGzOCgYTVLsQuW76ssrRw4-5zbNYy9Qrhk3apaRfHX5-83_d1uTOaS4ahPPup1bFReik8egxqHw20az-pAP2o5FoNv0iyjkNz6DC6krJE-gv1YKE2saIAo4_jQQgWbyn2Ebcd3N_s"/>
-<div class="flex-1">
-<p class="font-medium text-gray-900 dark:text-white">Paciente: Ana Martínez</p>
-<p class="text-sm text-gray-500 dark:text-gray-400">Fecha de última consulta: 05/08/2024</p>
-</div>
-<span class="material-symbols-outlined text-gray-400 dark:text-gray-500">chevron_right</span>
+<div class="space-y-3">
+<h3 class="text-center font-medium text-subtle-light dark:text-subtle-dark">Método de Pago</h3>
+<div class="grid grid-cols-3 gap-2">
+<button class="h-16 flex flex-col items-center justify-center bg-primary/10 text-primary rounded-lg border-2 border-primary">
+<span class="material-symbols-outlined">payments</span>
+<span class="text-xs font-semibold">Efectivo</span>
+</button>
+<button class="h-16 flex flex-col items-center justify-center bg-background-light dark:bg-background-dark hover:border-primary/50 border-2 border-transparent text-subtle-light dark:text-subtle-dark hover:text-foreground-light dark:hover:text-foreground-dark rounded-lg transition-colors">
+<span class="material-symbols-outlined">credit_card</span>
+<span class="text-xs font-semibold">Tarjeta</span>
+</button>
+<button class="h-16 flex flex-col items-center justify-center bg-background-light dark:bg-background-dark hover:border-primary/50 border-2 border-transparent text-subtle-light dark:text-subtle-dark hover:text-foreground-light dark:hover:text-foreground-dark rounded-lg transition-colors">
+<span class="material-symbols-outlined">account_balance</span>
+<span class="text-xs font-semibold">Transf.</span>
+</button>
 </div>
 </div>
+<div class="space-y-3 pt-4 border-t border-border-light dark:border-border-dark">
+<button class="w-full h-16 text-lg font-bold text-white bg-primary hover:bg-primary/90 rounded-lg flex items-center justify-center gap-2 transition-colors">
+<span class="material-symbols-outlined">check_circle</span>
+                                Completar Pago
+                            </button>
+<div class="grid grid-cols-2 gap-2">
+<button class="w-full h-12 text-sm font-medium text-danger-light dark:text-danger-dark bg-danger-light/10 hover:bg-danger-light/20 rounded-lg flex items-center justify-center gap-2 transition-colors">
+<span class="material-symbols-outlined text-base">cancel</span>
+                                    Anular
+                                </button>
+<button class="w-full h-12 text-sm font-medium text-subtle-light dark:text-subtle-dark bg-background-light dark:bg-background-dark hover:bg-primary/10 rounded-lg flex items-center justify-center gap-2 transition-colors">
+<span class="material-symbols-outlined text-base">print</span>
+                                    Imprimir Recibo
+                                </button>
 </div>
-<div>
-<h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Visor de Resultados</h2>
-<p class="text-gray-500 dark:text-gray-400 mb-6">Información clínica detallada del paciente seleccionado. Incluye resultados de análisis, fechas, médico remitente y observaciones.</p>
-<div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
-<div>
-<label class="block text-sm font-medium text-gray-700 dark:text-gray-300" for="paciente-select">Paciente</label>
-<select class="mt-1 form-select block w-full rounded border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 focus:border-primary focus:ring-primary text-gray-900 dark:text-gray-200" id="paciente-select">
-<option>Sofía Rodríguez</option>
-<option>Carlos López</option>
-<option>Ana Martínez</option>
-</select>
-</div>
-<div>
-<label class="block text-sm font-medium text-gray-700 dark:text-gray-300" for="fecha-select">Fecha</label>
-<select class="mt-1 form-select block w-full rounded border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 focus:border-primary focus:ring-primary text-gray-900 dark:text-gray-200" id="fecha-select">
-<option>15/07/2024</option>
-<option>22/06/2024</option>
-<option>05/08/2024</option>
-</select>
-</div>
-<div>
-<label class="block text-sm font-medium text-gray-700 dark:text-gray-300" for="analisis-select">Tipo de Análisis</label>
-<select class="mt-1 form-select block w-full rounded border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 focus:border-primary focus:ring-primary text-gray-900 dark:text-gray-200" id="analisis-select">
-<option>Hemograma Completo</option>
-<option>Perfil Lipídico</option>
-<option>Química Sanguínea</option>
-</select>
-</div>
-</div>
-<div class="overflow-x-auto rounded-lg border border-gray-200 dark:border-gray-700">
-<table class="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
-<thead class="bg-gray-50 dark:bg-gray-800">
-<tr>
-<th class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider" scope="col">Análisis</th>
-<th class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider" scope="col">Resultado</th>
-<th class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider" scope="col">Unidades</th>
-<th class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider" scope="col">Rango de Referencia</th>
-</tr>
-</thead>
-<tbody class="bg-white dark:bg-background-dark divide-y divide-gray-200 dark:divide-gray-700">
-<tr>
-<td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 dark:text-white">Glóbulos Rojos</td>
-<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">4.5</td>
-<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">millones/uL</td>
-<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">4.2 - 5.4</td>
-</tr>
-<tr>
-<td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 dark:text-white">Hemoglobina</td>
-<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">13.5</td>
-<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">g/dL</td>
-<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">12.0 - 16.0</td>
-</tr>
-<tr>
-<td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 dark:text-white">Hematocrito</td>
-<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">40</td>
-<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">%</td>
-<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">37 - 47</td>
-</tr>
-<tr>
-<td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 dark:text-white">Glóbulos Blancos</td>
-<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">7.2</td>
-<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">miles/uL</td>
-<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">4.5 - 11.0</td>
-</tr>
-<tr>
-<td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 dark:text-white">Plaquetas</td>
-<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">250</td>
-<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">miles/uL</td>
-<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">150 - 400</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="mt-6">
-<button class="w-full flex items-center justify-center gap-2 py-3 px-4 border border-gray-300 dark:border-gray-600 rounded text-sm font-medium text-gray-700 dark:text-gray-200 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">
-<span class="material-symbols-outlined text-base">ios_share</span>
-                Exportar a Historia Clínica
-              </button>
-</div>
-</div>
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-<div>
-<h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Vigencia de Autorización</h2>
-<div class="flex gap-4 py-6 text-center">
-<div class="flex-1">
-<div class="text-3xl font-bold text-primary">5</div>
-<div class="text-xs text-gray-500 dark:text-gray-400 uppercase">Días</div>
-</div>
-<div class="flex-1">
-<div class="text-3xl font-bold text-primary">23</div>
-<div class="text-xs text-gray-500 dark:text-gray-400 uppercase">Horas</div>
-</div>
-<div class="flex-1">
-<div class="text-3xl font-bold text-primary">59</div>
-<div class="text-xs text-gray-500 dark:text-gray-400 uppercase">Minutos</div>
-</div>
-<div class="flex-1">
-<div class="text-3xl font-bold text-primary">59</div>
-<div class="text-xs text-gray-500 dark:text-gray-400 uppercase">Segundos</div>
-</div>
-</div>
-<p class="text-sm text-gray-500 dark:text-gray-400">Tiempo restante para la vigencia de su autorización. Contacte a soporte para renovar.</p>
-</div>
-<div>
-<h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Log de Accesos</h2>
-<div class="overflow-x-auto rounded-lg border border-gray-200 dark:border-gray-700">
-<table class="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
-<thead class="bg-gray-50 dark:bg-gray-800">
-<tr>
-<th class="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider" scope="col">Fecha y Hora</th>
-<th class="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider" scope="col">Acción</th>
-</tr>
-</thead>
-<tbody class="bg-white dark:bg-background-dark divide-y divide-gray-200 dark:divide-gray-700">
-<tr>
-<td class="px-4 py-3 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">10/08/2024 14:30</td>
-<td class="px-4 py-3 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">Consulta de resultados</td>
-</tr>
-<tr>
-<td class="px-4 py-3 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">05/08/2024 10:00</td>
-<td class="px-4 py-3 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">Consulta de resultados</td>
-</tr>
-<tr>
-<td class="px-4 py-3 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">01/08/2024 16:45</td>
-<td class="px-4 py-3 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">Inicio de sesión</td>
-</tr>
-</tbody>
-</table>
 </div>
 </div>
 </div>
 </div>
 </main>
 </div>
-</div>
-
 </body></html>
