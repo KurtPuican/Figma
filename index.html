@@ -2,206 +2,174 @@
 <html lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Historial Médico</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<title>HealthLab - Instrucciones de Preparación</title>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <script>
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#137fec",
-                        "background-light": "#f6f7f8",
-                        "background-dark": "#101922",
-                    },
-                    fontFamily: {
-                        "display": ["Inter"]
-                    },
-                    borderRadius: {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                },
-            },
-        }
-    </script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#ec7f13",
+            "background-light": "#f8f7f6",
+            "background-dark": "#221910",
+            "foreground-light": "#1a1a1a",
+            "foreground-dark": "#f0f0f0",
+            "subtle-light": "#6b7280",
+            "subtle-dark": "#9ca3af",
+            "border-light": "#e5e7eb",
+            "border-dark": "#374151"
+          },
+          fontFamily: {
+            "display": ["Lexend"]
+          },
+          borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
 <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        .material-symbols-outlined {
-            font-variation-settings:
-            'FILL' 0,
-            'wght' 400,
-            'GRAD' 0,
-            'opsz' 24
-        }
-    </style>
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24
+    }
+  </style>
 </head>
-<body class="bg-background-light dark:bg-background-dark font-display">
+<body class="bg-background-light dark:bg-background-dark font-display text-foreground-light dark:text-foreground-dark">
 <div class="flex flex-col min-h-screen">
-<header class="bg-background-light dark:bg-background-dark border-b border-primary/20 dark:border-primary/30 px-4 sm:px-6 lg:px-8">
-<div class="container mx-auto flex items-center justify-between h-16">
-<div class="flex items-center gap-4">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-border-light dark:border-border-dark px-4 sm:px-6 py-4">
+<div class="flex items-center gap-3">
 <div class="text-primary size-8">
-<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-<path d="M24 4C25.7818 14.2173 33.7827 22.2182 44 24C33.7827 25.7818 25.7818 33.7827 24 44C22.2182 33.7827 14.2173 25.7818 4 24C14.2173 22.2182 22.2182 14.2173 24 4Z" fill="currentColor"></path>
-</svg>
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor"></path></svg>
 </div>
-<h2 class="text-xl font-bold text-slate-800 dark:text-white">Clínica Médica</h2>
+<h1 class="text-xl font-bold tracking-tight">HealthLab</h1>
 </div>
-<nav class="hidden md:flex items-center gap-8">
-<a class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary" href="#">Inicio</a>
-<a class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary" href="#">Citas</a>
-<a class="text-sm font-medium text-primary dark:text-primary" href="#">Resultados</a>
-<a class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary" href="#">Perfil</a>
-</nav>
 <div class="flex items-center gap-4">
-<button class="p-2 rounded-full text-slate-600 dark:text-slate-300 hover:bg-primary/10 dark:hover:bg-primary/20">
-<span class="material-symbols-outlined">
-                            notifications
-                        </span>
+<button class="flex items-center justify-center rounded-full size-10 bg-background-light dark:bg-background-dark text-foreground-light dark:text-foreground-dark hover:bg-primary/10 dark:hover:bg-primary/20">
+<span class="material-symbols-outlined">notifications</span>
 </button>
-<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD-TyzeF8Ad6h4Oh_juCWEOjfJpjCQiPzYQ7bTyVxLCEVY1dbDZQWjiKH2vlJp-Vy5yMZsl7T-Wr-LaFUjeUsQcGeD6pK5Z361grDaW4hK8v1UkJe9WTiJDeJh_Y0B27ljHsp-agrZB08yyMtPBErmIbL123aAiyXvbludY73u6fYI7m-yNzsNbHWHeSObHCoo5hRnmCG9sUAxeYUMavQY9TMKqqpGjo3Zvi92urldevXdcmf48BMx8kIUhMIFDhnqqwDO6HU6nf5M");'></div>
-</div>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBgZUOsiekRBgKREGcqNDmFZ5mKQG_fa2trKne-49qgEOhGsdf8EqY1R3_0kzmO9Wyyt3L7NK5nobobCGAkLqkbtxC3W47e5eAUfG21pExJAFN08O4v8f555VgtzSxL1H_OuRmpW5cPAlOecUaAOlk_xY0seUvb3Am9qhRAZcvfrMSf4mxv2DqmtJ8hYX6BQ4z8fC07IhR9_GFsHFjA-X6doYSbWlaYSfzg6RZ2zvqCFAKPx6_LomyG-AwdO_ShV6MKRJy2txDh3rA");'></div>
 </div>
 </header>
-<main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-8">
-<div class="max-w-7xl mx-auto">
-<h1 class="text-3xl font-bold text-slate-900 dark:text-white mb-6">Historial Médico</h1>
-<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-<div class="lg:col-span-1 space-y-6">
-<div class="bg-white dark:bg-background-dark p-4 rounded-lg shadow">
-<div class="relative">
-<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 dark:text-slate-500">search</span>
-<input class="w-full pl-10 pr-4 py-2 rounded-lg border border-slate-200 dark:border-slate-700 bg-background-light dark:bg-slate-800 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Buscar por nombre de examen" type="text"/>
-</div>
-</div>
-<div class="bg-white dark:bg-background-dark p-4 rounded-lg shadow">
-<h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3">Filtros</h3>
-<div class="flex flex-wrap gap-2">
-<button class="px-3 py-1 text-sm font-medium rounded-full bg-primary text-white">Todos</button>
-<button class="px-3 py-1 text-sm font-medium rounded-full bg-background-light dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-primary/20 dark:hover:bg-primary/30">Hematología</button>
-<button class="px-3 py-1 text-sm font-medium rounded-full bg-background-light dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-primary/20 dark:hover:bg-primary/30">Química</button>
-<button class="px-3 py-1 text-sm font-medium rounded-full bg-background-light dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-primary/20 dark:hover:bg-primary/30">Microbiología</button>
-</div>
-</div>
-<div class="bg-white dark:bg-background-dark p-4 rounded-lg shadow">
-<h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3">Rango de Fechas</h3>
-<div class="flex items-center justify-between mb-2">
-<button class="p-2 rounded-full hover:bg-primary/10 dark:hover:bg-primary/20 text-slate-600 dark:text-slate-300"><span class="material-symbols-outlined">chevron_left</span></button>
-<p class="text-sm font-bold text-slate-800 dark:text-white">Mayo 2024</p>
-<button class="p-2 rounded-full hover:bg-primary/10 dark:hover:bg-primary/20 text-slate-600 dark:text-slate-300"><span class="material-symbols-outlined">chevron_right</span></button>
-</div>
-<div class="grid grid-cols-7 gap-1 text-center text-xs font-medium text-slate-500 dark:text-slate-400">
-<span>D</span><span>L</span><span>M</span><span>M</span><span>J</span><span>V</span><span>S</span>
-</div>
-<div class="grid grid-cols-7 gap-1 mt-2 text-sm">
-<span class="col-start-4 text-slate-700 dark:text-slate-300 p-1 rounded-full hover:bg-primary/10 dark:hover:bg-primary/20">1</span>
-<span class="text-slate-700 dark:text-slate-300 p-1 rounded-full hover:bg-primary/10 dark:hover:bg-primary/20">2</span>
-<span class="text-slate-700 dark:text-slate-300 p-1 rounded-full hover:bg-primary/10 dark:hover:bg-primary/20">3</span>
-<span class="text-slate-700 dark:text-slate-300 p-1 rounded-full hover:bg-primary/10 dark:hover:bg-primary/20">4</span>
-<span class="bg-primary text-white p-1 rounded-l-full">5</span>
-<span class="bg-primary/20 dark:bg-primary/30 text-slate-700 dark:text-slate-300 p-1">6</span>
-<span class="bg-primary/20 dark:bg-primary/30 text-slate-700 dark:text-slate-300 p-1">7</span>
-<span class="bg-primary/20 dark:bg-primary/30 text-slate-700 dark:text-slate-300 p-1">...</span>
-<span class="bg-primary/20 dark:bg-primary/30 text-slate-700 dark:text-slate-300 p-1">29</span>
-<span class="bg-primary text-white p-1 rounded-r-full">30</span>
-<span class="text-slate-400 dark:text-slate-600 p-1">31</span>
-</div>
-</div>
-</div>
-<div class="lg:col-span-2 space-y-6">
-<div class="bg-white dark:bg-background-dark p-6 rounded-lg shadow">
-<h3 class="text-lg font-bold text-slate-900 dark:text-white mb-4">Resultados</h3>
-<div class="relative pl-8">
-<div class="absolute left-0 top-0 h-full w-0.5 bg-slate-200 dark:bg-slate-700"></div>
+<main class="flex-grow w-full max-w-2xl mx-auto px-4 sm:px-6 py-8">
 <div class="space-y-8">
-<div class="relative">
-<div class="absolute -left-10 top-0 flex items-center justify-center size-5 bg-white dark:bg-background-dark rounded-full border-2 border-primary">
-<span class="material-symbols-outlined text-primary text-sm">science</span>
+<div class="text-center">
+<h2 class="text-3xl font-bold tracking-tight">Preparación para tu cita</h2>
 </div>
-<p class="font-bold text-slate-800 dark:text-white">Examen de Sangre Completa</p>
-<p class="text-sm text-slate-500 dark:text-slate-400">15 de Mayo, 2024</p>
+<div class="bg-primary/10 dark:bg-primary/20 p-4 rounded-xl flex items-center justify-between gap-4">
+<div class="flex-1">
+<p class="text-sm text-subtle-light dark:text-subtle-dark">Cita</p>
+<p class="text-lg font-bold">Análisis de sangre completo</p>
+<p class="text-sm text-subtle-light dark:text-subtle-dark">15 de julio, 10:00 AM</p>
 </div>
-<div class="relative">
-<div class="absolute -left-10 top-0 flex items-center justify-center size-5 bg-white dark:bg-background-dark rounded-full border-2 border-primary">
-<span class="material-symbols-outlined text-primary text-sm">cardiology</span>
-</div>
-<p class="font-bold text-slate-800 dark:text-white">Perfil Lipídico</p>
-<p class="text-sm text-slate-500 dark:text-slate-400">22 de Abril, 2024</p>
-</div>
-<div class="relative">
-<div class="absolute -left-10 top-0 flex items-center justify-center size-5 bg-white dark:bg-background-dark rounded-full border-2 border-primary">
-<span class="material-symbols-outlined text-primary text-sm">water_drop</span>
-</div>
-<p class="font-bold text-slate-800 dark:text-white">Cultivo de Orina</p>
-<p class="text-sm text-slate-500 dark:text-slate-400">10 de Marzo, 2024</p>
+<div class="flex-shrink-0">
+<div class="bg-cover bg-center rounded-lg w-24 h-24" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAt12sSFZhFf-WBCBFDXrPXcAv2ljwzqjh965GEjFdEXrjcTXID1Ti6tiWhsH9ffWAjJsI6swInVvFjXkNub6iNtOvrJu1_oR5VWtw6VYi0L5-FnptBC4VB7gNrV8oyxZQItwAyyW3kbNnEbUorKEfMM2j67iCoe4gN9SZ_BYD4qYHapZtwos3ee8yEJCme-SF4RzrHtVUO8t_BWvVTHElNg5Kc-MVDBQwvNIUmb57Nua3Rp637xcMQUlHfQqdniIMD9qYGLw0pQEM");'></div>
 </div>
 </div>
+<div class="space-y-6">
+<h3 class="text-2xl font-bold">Instrucciones</h3>
+<div class="space-y-4">
+<div class="flex items-start gap-4">
+<div class="flex-shrink-0 size-12 rounded-lg bg-primary/10 dark:bg-primary/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl">water_drop</span>
+</div>
+<div>
+<p class="font-bold">Ayuno</p>
+<p class="text-sm text-subtle-light dark:text-subtle-dark">No comer ni beber nada excepto agua durante 8-12 horas antes del análisis.</p>
 </div>
 </div>
-<div class="bg-white dark:bg-background-dark p-6 rounded-lg shadow">
-<h3 class="text-lg font-bold text-slate-900 dark:text-white mb-4">Comparación</h3>
+<div class="flex items-start gap-4">
+<div class="flex-shrink-0 size-12 rounded-lg bg-primary/10 dark:bg-primary/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl">pill</span>
+</div>
+<div>
+<p class="font-bold">Medicamentos</p>
+<p class="text-sm text-subtle-light dark:text-subtle-dark">Evitar tomar medicamentos que puedan afectar los resultados. Consultar con el médico si es necesario.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="flex-shrink-0 size-12 rounded-lg bg-primary/10 dark:bg-primary/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl">no_food</span>
+</div>
+<div>
+<p class="font-bold">Restricciones</p>
+<p class="text-sm text-subtle-light dark:text-subtle-dark">Evitar comidas grasosas y alcohol 24 horas antes del análisis.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="space-y-6">
+<h3 class="text-2xl font-bold">Checklist de Preparación</h3>
 <div class="space-y-3">
-<label class="flex items-center gap-x-3">
-<input class="h-4 w-4 rounded border-slate-300 dark:border-slate-600 text-primary focus:ring-primary bg-background-light dark:bg-background-dark" type="checkbox"/>
-<p class="text-slate-700 dark:text-slate-300 text-sm">Examen de Sangre Completa (15 de Mayo, 2024)</p>
+<label class="flex items-center gap-3 p-3 rounded-lg bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark cursor-pointer hover:bg-primary/5 dark:hover:bg-primary/10">
+<input checked="" class="h-5 w-5 rounded border-border-light dark:border-border-dark bg-transparent text-primary focus:ring-primary focus:ring-offset-background-light dark:focus:ring-offset-background-dark" type="checkbox"/>
+<span>Ayuno de 12 horas</span>
 </label>
-<label class="flex items-center gap-x-3">
-<input class="h-4 w-4 rounded border-slate-300 dark:border-slate-600 text-primary focus:ring-primary bg-background-light dark:bg-background-dark" type="checkbox"/>
-<p class="text-slate-700 dark:text-slate-300 text-sm">Perfil Lipídico (22 de Abril, 2024)</p>
+<label class="flex items-center gap-3 p-3 rounded-lg bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark cursor-pointer hover:bg-primary/5 dark:hover:bg-primary/10">
+<input checked="" class="h-5 w-5 rounded border-border-light dark:border-border-dark bg-transparent text-primary focus:ring-primary focus:ring-offset-background-light dark:focus:ring-offset-background-dark" type="checkbox"/>
+<span>No tomar medicamentos (consultar médico)</span>
 </label>
-<label class="flex items-center gap-x-3">
-<input class="h-4 w-4 rounded border-slate-300 dark:border-slate-600 text-primary focus:ring-primary bg-background-light dark:bg-background-dark" type="checkbox"/>
-<p class="text-slate-700 dark:text-slate-300 text-sm">Cultivo de Orina (10 de Marzo, 2024)</p>
+<label class="flex items-center gap-3 p-3 rounded-lg bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark cursor-pointer hover:bg-primary/5 dark:hover:bg-primary/10">
+<input class="h-5 w-5 rounded border-border-light dark:border-border-dark bg-transparent text-primary focus:ring-primary focus:ring-offset-background-light dark:focus:ring-offset-background-dark" type="checkbox"/>
+<span>Evitar comidas grasosas</span>
 </label>
 </div>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-<div class="bg-white dark:bg-background-dark p-4 rounded-lg shadow">
-<p class="text-sm font-medium text-slate-600 dark:text-slate-300">Glucosa en Sangre</p>
-<p class="text-3xl font-bold text-slate-900 dark:text-white mt-1">95 <span class="text-base font-normal text-slate-500 dark:text-slate-400">mg/dL</span></p>
-<div class="flex items-center gap-2 text-sm mt-1">
-<span class="text-slate-500 dark:text-slate-400">Normal</span>
-<span class="text-green-500 flex items-center"><span class="material-symbols-outlined text-base">arrow_downward</span> 5%</span>
-</div>
-<div class="mt-4 h-32">
-<svg class="w-full h-full" preserveAspectRatio="none" viewBox="0 0 200 100">
-<path d="M 0 80 C 20 80, 40 40, 60 40 C 80 40, 100 80, 120 80 C 140 80, 160 20, 180 20 L 200 20" fill="none" stroke="#137fec" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
+<div class="space-y-6">
+<h3 class="text-2xl font-bold">Establecer Recordatorio</h3>
+<div class="grid grid-cols-2 gap-3">
+<button class="w-full text-center rounded-lg py-2 px-3 bg-primary/10 dark:bg-primary/20 text-primary font-semibold hover:bg-primary/20 dark:hover:bg-primary/30 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background-light dark:focus:ring-offset-background-dark">24h antes</button>
+<button class="w-full text-center rounded-lg py-2 px-3 bg-primary/10 dark:bg-primary/20 text-primary font-semibold hover:bg-primary/20 dark:hover:bg-primary/30 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background-light dark:focus:ring-offset-background-dark">12h antes</button>
+<button class="w-full text-center rounded-lg py-2 px-3 bg-primary/10 dark:bg-primary/20 text-primary font-semibold hover:bg-primary/20 dark:hover:bg-primary/30 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background-light dark:focus:ring-offset-background-dark">2h antes</button>
+<button class="w-full text-center rounded-lg py-2 px-3 bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark text-subtle-light dark:text-subtle-dark font-semibold hover:bg-primary/5 dark:hover:bg-primary/10">No recordar</button>
 </div>
 </div>
-<div class="bg-white dark:bg-background-dark p-4 rounded-lg shadow">
-<p class="text-sm font-medium text-slate-600 dark:text-slate-300">Colesterol Total</p>
-<p class="text-3xl font-bold text-slate-900 dark:text-white mt-1">180 <span class="text-base font-normal text-slate-500 dark:text-slate-400">mg/dL</span></p>
-<div class="flex items-center gap-2 text-sm mt-1">
-<span class="text-slate-500 dark:text-slate-400">Alto</span>
-<span class="text-red-500 flex items-center"><span class="material-symbols-outlined text-base">arrow_upward</span> 10%</span>
+<div class="space-y-6">
+<h3 class="text-2xl font-bold">Preguntas Frecuentes</h3>
+<div class="space-y-2">
+<details class="group rounded-lg bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark">
+<summary class="flex cursor-pointer items-center justify-between p-4 list-none">
+<span class="font-medium">¿Qué pasa si no cumplo el ayuno?</span>
+<span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180">expand_more</span>
+</summary>
+<p class="p-4 pt-0 text-sm text-subtle-light dark:text-subtle-dark">No cumplir con el ayuno puede alterar los resultados de su análisis. Es crucial seguir las indicaciones para garantizar la precisión del diagnóstico.</p>
+</details>
+<details class="group rounded-lg bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark">
+<summary class="flex cursor-pointer items-center justify-between p-4 list-none">
+<span class="font-medium">¿Puedo tomar agua?</span>
+<span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180">expand_more</span>
+</summary>
+<p class="p-4 pt-0 text-sm text-subtle-light dark:text-subtle-dark">Sí, puede y debe tomar agua. Mantenerse hidratado es importante. Evite otras bebidas como café, té, jugos o refrescos.</p>
+</details>
+<details class="group rounded-lg bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark">
+<summary class="flex cursor-pointer items-center justify-between p-4 list-none">
+<span class="font-medium">¿Qué medicamentos debo evitar?</span>
+<span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180">expand_more</span>
+</summary>
+<p class="p-4 pt-0 text-sm text-subtle-light dark:text-subtle-dark">Consulte con su médico sobre los medicamentos que toma habitualmente. Algunos pueden necesitar ser suspendidos temporalmente. No suspenda ningún medicamento sin indicación médica.</p>
+</details>
 </div>
-<div class="mt-4 h-32">
-<svg class="w-full h-full" preserveAspectRatio="none" viewBox="0 0 200 100">
-<path d="M 0 40 C 20 40, 40 80, 60 80 C 80 80, 100 30, 120 30 C 140 30, 160 70, 180 70 L 200 70" fill="none" stroke="#137fec" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
 </div>
-</div>
-</div>
-<div class="flex flex-col sm:flex-row gap-4">
-<button class="flex-1 flex items-center justify-center gap-2 px-4 py-2 text-sm font-bold rounded-lg bg-primary/10 dark:bg-primary/20 text-primary hover:bg-primary/20 dark:hover:bg-primary/30">
-<span class="material-symbols-outlined">download</span>
-                                Descargar PDF
-                            </button>
-<button class="flex-1 flex items-center justify-center gap-2 px-4 py-2 text-sm font-bold rounded-lg bg-primary text-white hover:opacity-90">
-<span class="material-symbols-outlined">share</span>
-                                Compartir con Médico
-                            </button>
-</div>
+<div class="space-y-6 pt-4 border-t border-border-light dark:border-border-dark">
+<button class="w-full flex items-center justify-center gap-2 rounded-lg py-3 px-4 bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark font-semibold hover:bg-primary/5 dark:hover:bg-primary/10">
+<span class="material-symbols-outlined">support_agent</span>
+            Contactar al Laboratorio
+          </button>
+<div class="bg-primary/10 dark:bg-primary/20 p-4 rounded-lg space-y-4">
+<label class="flex items-center justify-between cursor-pointer">
+<span class="font-medium">He leído y comprendido las instrucciones</span>
+<input class="h-6 w-6 rounded border-primary/50 bg-transparent text-primary focus:ring-primary focus:ring-offset-primary/10 dark:focus:ring-offset-primary/20" type="checkbox"/>
+</label>
+<button class="w-full rounded-lg bg-primary py-3 px-4 text-white font-bold hover:bg-primary/90 disabled:bg-primary/40 disabled:cursor-not-allowed">
+              Confirmar Preparación
+            </button>
 </div>
 </div>
 </div>
