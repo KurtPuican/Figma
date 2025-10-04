@@ -2,174 +2,153 @@
 <html lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>HealthLab - Instrucciones de Preparación</title>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <script>
-    tailwind.config = {
-      darkMode: "class",
-      theme: {
-        extend: {
-          colors: {
-            "primary": "#ec7f13",
-            "background-light": "#f8f7f6",
-            "background-dark": "#221910",
-            "foreground-light": "#1a1a1a",
-            "foreground-dark": "#f0f0f0",
-            "subtle-light": "#6b7280",
-            "subtle-dark": "#9ca3af",
-            "border-light": "#e5e7eb",
-            "border-dark": "#374151"
-          },
-          fontFamily: {
-            "display": ["Lexend"]
-          },
-          borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
-        },
-      },
-    }
-  </script>
-<style>
-    .material-symbols-outlined {
-      font-variation-settings:
-      'FILL' 0,
-      'wght' 400,
-      'GRAD' 0,
-      'opsz' 24
-    }
-  </style>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#11d411",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#102210",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
 </head>
-<body class="bg-background-light dark:bg-background-dark font-display text-foreground-light dark:text-foreground-dark">
+<body class="bg-background-light dark:bg-background-dark font-display text-[#111811] dark:text-background-light">
 <div class="flex flex-col min-h-screen">
-<header class="flex items-center justify-between whitespace-nowrap border-b border-border-light dark:border-border-dark px-4 sm:px-6 py-4">
-<div class="flex items-center gap-3">
-<div class="text-primary size-8">
-<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor"></path></svg>
+<header class="flex items-center justify-between whitespace-nowrap border-b border-primary/20 dark:border-primary/30 px-6 md:px-10 py-4">
+<div class="flex items-center gap-4 text-[#111811] dark:text-background-light">
+<div class="size-8 text-primary">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M44 11.2727C44 14.0109 39.8386 16.3957 33.69 17.6364C39.8386 18.877 44 21.2618 44 24C44 26.7382 39.8386 29.123 33.69 30.3636C39.8386 31.6043 44 33.9891 44 36.7273C44 40.7439 35.0457 44 24 44C12.9543 44 4 40.7439 4 36.7273C4 33.9891 8.16144 31.6043 14.31 30.3636C8.16144 29.123 4 26.7382 4 24C4 21.2618 8.16144 18.877 14.31 17.6364C8.16144 16.3957 4 14.0109 4 11.2727C4 7.25611 12.9543 4 24 4C35.0457 4 44 7.25611 44 11.2727Z" fill="currentColor"></path>
+</svg>
 </div>
-<h1 class="text-xl font-bold tracking-tight">HealthLab</h1>
+<h2 class="text-xl font-bold">Clínica San Lucas</h2>
 </div>
 <div class="flex items-center gap-4">
-<button class="flex items-center justify-center rounded-full size-10 bg-background-light dark:bg-background-dark text-foreground-light dark:text-foreground-dark hover:bg-primary/10 dark:hover:bg-primary/20">
-<span class="material-symbols-outlined">notifications</span>
+<button class="md:hidden p-2 rounded-full bg-primary/20 dark:bg-primary/30 text-[#111811] dark:text-background-light">
+<span class="material-symbols-outlined">menu</span>
 </button>
-<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBgZUOsiekRBgKREGcqNDmFZ5mKQG_fa2trKne-49qgEOhGsdf8EqY1R3_0kzmO9Wyyt3L7NK5nobobCGAkLqkbtxC3W47e5eAUfG21pExJAFN08O4v8f555VgtzSxL1H_OuRmpW5cPAlOecUaAOlk_xY0seUvb3Am9qhRAZcvfrMSf4mxv2DqmtJ8hYX6BQ4z8fC07IhR9_GFsHFjA-X6doYSbWlaYSfzg6RZ2zvqCFAKPx6_LomyG-AwdO_ShV6MKRJy2txDh3rA");'></div>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBx6qz2EXWAL7vCni3K-HlsnRS0XCuz92GQC-jKVnfv9CjqSr8-pJ0LmXAe-UEnHj_rCYeDyTreXFkRywUr-5H13w2wiTb5tFBBV6fqq2MCRDqMpxdCgn96vnopaosDvXudDbtPADmzGaOS9gTj257_zhoviWu1ooEK2ubTuKERg6GXj1M3noyGPim6grtFa0l1Q6koN2BxtP1_zVt6VCG_dUYpgaOFGIrZZWoPmAKy7UvBz5f_05tOapiMIgr5ng_nZnbAsbkJVEU");'></div>
 </div>
 </header>
-<main class="flex-grow w-full max-w-2xl mx-auto px-4 sm:px-6 py-8">
-<div class="space-y-8">
-<div class="text-center">
-<h2 class="text-3xl font-bold tracking-tight">Preparación para tu cita</h2>
+<main class="flex-1 flex justify-center py-8 px-4 sm:px-6 lg:px-8">
+<div class="w-full max-w-2xl space-y-8">
+<div>
+<h1 class="text-3xl font-bold text-center text-[#111811] dark:text-background-light">Verificación de Paciente</h1>
 </div>
-<div class="bg-primary/10 dark:bg-primary/20 p-4 rounded-xl flex items-center justify-between gap-4">
-<div class="flex-1">
-<p class="text-sm text-subtle-light dark:text-subtle-dark">Cita</p>
-<p class="text-lg font-bold">Análisis de sangre completo</p>
-<p class="text-sm text-subtle-light dark:text-subtle-dark">15 de julio, 10:00 AM</p>
+<div class="bg-background-light dark:bg-background-dark p-6 rounded-lg border border-primary/20 dark:border-primary/30">
+<h3 class="text-lg font-bold mb-4">Datos del Paciente</h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+<div class="flex justify-between border-b border-primary/20 dark:border-primary/30 py-2">
+<p class="font-medium text-primary/80 dark:text-primary/70">Nombre:</p>
+<p>Sofía Ramírez</p>
 </div>
-<div class="flex-shrink-0">
-<div class="bg-cover bg-center rounded-lg w-24 h-24" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAt12sSFZhFf-WBCBFDXrPXcAv2ljwzqjh965GEjFdEXrjcTXID1Ti6tiWhsH9ffWAjJsI6swInVvFjXkNub6iNtOvrJu1_oR5VWtw6VYi0L5-FnptBC4VB7gNrV8oyxZQItwAyyW3kbNnEbUorKEfMM2j67iCoe4gN9SZ_BYD4qYHapZtwos3ee8yEJCme-SF4RzrHtVUO8t_BWvVTHElNg5Kc-MVDBQwvNIUmb57Nua3Rp637xcMQUlHfQqdniIMD9qYGLw0pQEM");'></div>
+<div class="flex justify-between border-b border-primary/20 dark:border-primary/30 py-2">
+<p class="font-medium text-primary/80 dark:text-primary/70">F. Nacimiento:</p>
+<p>15/03/1988</p>
+</div>
+<div class="col-span-1 sm:col-span-2 flex justify-between border-b border-primary/20 dark:border-primary/30 py-2">
+<p class="font-medium text-primary/80 dark:text-primary/70">Tipo de Análisis:</p>
+<p class="font-semibold">Hemograma Completo</p>
 </div>
 </div>
-<div class="space-y-6">
-<h3 class="text-2xl font-bold">Instrucciones</h3>
+</div>
+<div class="bg-background-light dark:bg-background-dark p-6 rounded-lg border border-primary/20 dark:border-primary/30">
+<h3 class="text-lg font-bold mb-4">Requisitos Previos</h3>
 <div class="space-y-4">
-<div class="flex items-start gap-4">
-<div class="flex-shrink-0 size-12 rounded-lg bg-primary/10 dark:bg-primary/20 flex items-center justify-center text-primary">
-<span class="material-symbols-outlined text-3xl">water_drop</span>
-</div>
-<div>
-<p class="font-bold">Ayuno</p>
-<p class="text-sm text-subtle-light dark:text-subtle-dark">No comer ni beber nada excepto agua durante 8-12 horas antes del análisis.</p>
-</div>
-</div>
-<div class="flex items-start gap-4">
-<div class="flex-shrink-0 size-12 rounded-lg bg-primary/10 dark:bg-primary/20 flex items-center justify-center text-primary">
-<span class="material-symbols-outlined text-3xl">pill</span>
-</div>
-<div>
-<p class="font-bold">Medicamentos</p>
-<p class="text-sm text-subtle-light dark:text-subtle-dark">Evitar tomar medicamentos que puedan afectar los resultados. Consultar con el médico si es necesario.</p>
-</div>
-</div>
-<div class="flex items-start gap-4">
-<div class="flex-shrink-0 size-12 rounded-lg bg-primary/10 dark:bg-primary/20 flex items-center justify-center text-primary">
-<span class="material-symbols-outlined text-3xl">no_food</span>
-</div>
-<div>
-<p class="font-bold">Restricciones</p>
-<p class="text-sm text-subtle-light dark:text-subtle-dark">Evitar comidas grasosas y alcohol 24 horas antes del análisis.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="space-y-6">
-<h3 class="text-2xl font-bold">Checklist de Preparación</h3>
-<div class="space-y-3">
-<label class="flex items-center gap-3 p-3 rounded-lg bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark cursor-pointer hover:bg-primary/5 dark:hover:bg-primary/10">
-<input checked="" class="h-5 w-5 rounded border-border-light dark:border-border-dark bg-transparent text-primary focus:ring-primary focus:ring-offset-background-light dark:focus:ring-offset-background-dark" type="checkbox"/>
+<label class="flex items-center justify-between p-3 rounded-lg bg-primary/10 dark:bg-primary/20 has-[:checked]:bg-green-500/20 has-[:not(:checked)]:bg-red-500/20">
 <span>Ayuno de 12 horas</span>
+<div class="flex items-center gap-2">
+<input checked="" class="form-radio text-green-500 focus:ring-green-500" name="ayuno" type="radio"/> <span class="text-sm">Sí</span>
+<input class="form-radio text-red-500 focus:ring-red-500" name="ayuno" type="radio"/> <span class="text-sm">No</span>
+</div>
 </label>
-<label class="flex items-center gap-3 p-3 rounded-lg bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark cursor-pointer hover:bg-primary/5 dark:hover:bg-primary/10">
-<input checked="" class="h-5 w-5 rounded border-border-light dark:border-border-dark bg-transparent text-primary focus:ring-primary focus:ring-offset-background-light dark:focus:ring-offset-background-dark" type="checkbox"/>
-<span>No tomar medicamentos (consultar médico)</span>
+<label class="flex items-center justify-between p-3 rounded-lg bg-primary/10 dark:bg-primary/20 has-[:checked]:bg-green-500/20 has-[:not(:checked)]:bg-red-500/20">
+<span>No consumir alcohol 24h antes</span>
+<div class="flex items-center gap-2">
+<input checked="" class="form-radio text-green-500 focus:ring-green-500" name="alcohol" type="radio"/> <span class="text-sm">Sí</span>
+<input class="form-radio text-red-500 focus:ring-red-500" name="alcohol" type="radio"/> <span class="text-sm">No</span>
+</div>
 </label>
-<label class="flex items-center gap-3 p-3 rounded-lg bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark cursor-pointer hover:bg-primary/5 dark:hover:bg-primary/10">
-<input class="h-5 w-5 rounded border-border-light dark:border-border-dark bg-transparent text-primary focus:ring-primary focus:ring-offset-background-light dark:focus:ring-offset-background-dark" type="checkbox"/>
-<span>Evitar comidas grasosas</span>
+<label class="flex items-center justify-between p-3 rounded-lg bg-red-500/20 dark:bg-red-500/30">
+<span>Presentar identificación oficial</span>
+<div class="flex items-center gap-2">
+<input class="form-radio text-green-500 focus:ring-green-500" name="id" type="radio"/> <span class="text-sm">Sí</span>
+<input checked="" class="form-radio text-red-500 focus:ring-red-500" name="id" type="radio"/> <span class="text-sm">No</span>
+</div>
 </label>
 </div>
 </div>
-<div class="space-y-6">
-<h3 class="text-2xl font-bold">Establecer Recordatorio</h3>
-<div class="grid grid-cols-2 gap-3">
-<button class="w-full text-center rounded-lg py-2 px-3 bg-primary/10 dark:bg-primary/20 text-primary font-semibold hover:bg-primary/20 dark:hover:bg-primary/30 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background-light dark:focus:ring-offset-background-dark">24h antes</button>
-<button class="w-full text-center rounded-lg py-2 px-3 bg-primary/10 dark:bg-primary/20 text-primary font-semibold hover:bg-primary/20 dark:hover:bg-primary/30 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background-light dark:focus:ring-offset-background-dark">12h antes</button>
-<button class="w-full text-center rounded-lg py-2 px-3 bg-primary/10 dark:bg-primary/20 text-primary font-semibold hover:bg-primary/20 dark:hover:bg-primary/30 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background-light dark:focus:ring-offset-background-dark">2h antes</button>
-<button class="w-full text-center rounded-lg py-2 px-3 bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark text-subtle-light dark:text-subtle-dark font-semibold hover:bg-primary/5 dark:hover:bg-primary/10">No recordar</button>
+<div class="bg-background-light dark:bg-background-dark p-6 rounded-lg border border-primary/20 dark:border-primary/30">
+<h3 class="text-lg font-bold mb-4">Verificación Específica</h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block text-sm font-medium mb-1" for="hidratacion">Nivel de hidratación</label>
+<input class="form-input w-full rounded border-primary/30 dark:border-primary/40 bg-transparent focus:border-primary focus:ring-primary" id="hidratacion" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-medium mb-1" for="venas">Estado de venas</label>
+<input class="form-input w-full rounded border-primary/30 dark:border-primary/40 bg-transparent focus:border-primary focus:ring-primary" id="venas" type="text"/>
+</div>
+<div class="sm:col-span-2">
+<label class="block text-sm font-medium mb-1" for="observaciones">Observaciones del personal</label>
+<textarea class="form-textarea w-full rounded border-primary/30 dark:border-primary/40 bg-transparent focus:border-primary focus:ring-primary" id="observaciones" placeholder="Ingrese observaciones..." rows="3"></textarea>
 </div>
 </div>
-<div class="space-y-6">
-<h3 class="text-2xl font-bold">Preguntas Frecuentes</h3>
-<div class="space-y-2">
-<details class="group rounded-lg bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark">
-<summary class="flex cursor-pointer items-center justify-between p-4 list-none">
-<span class="font-medium">¿Qué pasa si no cumplo el ayuno?</span>
-<span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180">expand_more</span>
-</summary>
-<p class="p-4 pt-0 text-sm text-subtle-light dark:text-subtle-dark">No cumplir con el ayuno puede alterar los resultados de su análisis. Es crucial seguir las indicaciones para garantizar la precisión del diagnóstico.</p>
-</details>
-<details class="group rounded-lg bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark">
-<summary class="flex cursor-pointer items-center justify-between p-4 list-none">
-<span class="font-medium">¿Puedo tomar agua?</span>
-<span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180">expand_more</span>
-</summary>
-<p class="p-4 pt-0 text-sm text-subtle-light dark:text-subtle-dark">Sí, puede y debe tomar agua. Mantenerse hidratado es importante. Evite otras bebidas como café, té, jugos o refrescos.</p>
-</details>
-<details class="group rounded-lg bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark">
-<summary class="flex cursor-pointer items-center justify-between p-4 list-none">
-<span class="font-medium">¿Qué medicamentos debo evitar?</span>
-<span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180">expand_more</span>
-</summary>
-<p class="p-4 pt-0 text-sm text-subtle-light dark:text-subtle-dark">Consulte con su médico sobre los medicamentos que toma habitualmente. Algunos pueden necesitar ser suspendidos temporalmente. No suspenda ningún medicamento sin indicación médica.</p>
-</details>
+</div>
+<div class="bg-background-light dark:bg-background-dark p-6 rounded-lg border border-primary/20 dark:border-primary/30">
+<h3 class="text-lg font-bold mb-4">Firma del Paciente</h3>
+<div class="border-2 border-dashed border-primary/40 dark:border-primary/50 rounded-lg p-8 text-center">
+<p class="font-semibold">Firma Digital</p>
+<p class="text-sm text-primary/80 dark:text-primary/70">El paciente debe firmar aquí para confirmar la información.</p>
+<div class="mt-4 bg-primary/10 dark:bg-primary/20 h-24 rounded-lg"></div>
 </div>
 </div>
-<div class="space-y-6 pt-4 border-t border-border-light dark:border-border-dark">
-<button class="w-full flex items-center justify-center gap-2 rounded-lg py-3 px-4 bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark font-semibold hover:bg-primary/5 dark:hover:bg-primary/10">
-<span class="material-symbols-outlined">support_agent</span>
-            Contactar al Laboratorio
-          </button>
-<div class="bg-primary/10 dark:bg-primary/20 p-4 rounded-lg space-y-4">
-<label class="flex items-center justify-between cursor-pointer">
-<span class="font-medium">He leído y comprendido las instrucciones</span>
-<input class="h-6 w-6 rounded border-primary/50 bg-transparent text-primary focus:ring-primary focus:ring-offset-primary/10 dark:focus:ring-offset-primary/20" type="checkbox"/>
-</label>
-<button class="w-full rounded-lg bg-primary py-3 px-4 text-white font-bold hover:bg-primary/90 disabled:bg-primary/40 disabled:cursor-not-allowed">
-              Confirmar Preparación
-            </button>
+<div class="bg-background-light dark:bg-background-dark p-6 rounded-lg border border-primary/20 dark:border-primary/30">
+<h3 class="text-lg font-bold mb-4">Log de Verificación</h3>
+<div class="text-sm space-y-2">
+<div class="flex justify-between">
+<p class="font-medium text-primary/80 dark:text-primary/70">Fecha y Hora:</p>
+<p>22 de Julio de 2024, 10:30 AM</p>
+</div>
+<div class="flex justify-between">
+<p class="font-medium text-primary/80 dark:text-primary/70">Responsable:</p>
+<p>Ana López</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-4 justify-between items-center pt-4">
+<button class="w-full sm:w-auto flex items-center justify-center gap-2 px-4 py-2 rounded bg-primary/20 dark:bg-primary/30 text-[#111811] dark:text-background-light font-bold hover:bg-primary/30 dark:hover:bg-primary/40 transition-colors">
+<span class="material-symbols-outlined">description</span>
+                        Instrucciones
+                    </button>
+<div class="w-full sm:w-auto flex flex-col sm:flex-row gap-4">
+<button class="w-full sm:w-auto px-4 py-2 rounded bg-yellow-500/80 text-white font-bold hover:bg-yellow-500 transition-colors">
+                            Reprogramar
+                        </button>
+<button class="w-full sm:w-auto px-4 py-2 rounded bg-primary text-black font-bold hover:bg-opacity-80 transition-opacity">
+                            Guardar Verificación
+                        </button>
 </div>
 </div>
 </div>
